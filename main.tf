@@ -39,7 +39,7 @@ resource "vault_aws_secret_backend" "aws" {
   access_key = aws_iam_access_key.secrets_engine_credentials.id
   secret_key = aws_iam_access_key.secrets_engine_credentials.secret
 
-  default_lease_ttl_seconds = "120"
+  default_lease_ttl_seconds = "240"
 }
 
 resource "vault_aws_secret_backend_role" "admin" {
