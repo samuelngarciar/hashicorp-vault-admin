@@ -75,9 +75,7 @@ resource "vault_aws_secret_backend_role" "admnet" {
     {
       "Effect": "Allow",
       "Action": [
-        "iam:*", "ec2:*",
-        "elasticloadbalancing:*", 
-        "route53:*"
+        "iam:*", "ec2:*", "elasticloadbalancing:*", "route53:*"
       ],
       "Resource": "*"
     }
